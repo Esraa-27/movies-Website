@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="sidebar">
+    <div class="sidebar-header py-5 px-2">
+      <div class="d-flex flex-column justify-content-between h-100 align-items-center">
+        <div class="head-icon w-75">
+          <img src="img/logo.png" class="w-100" alt="logo" />
+        </div>
+        <div class="x-header">
+          <i class="fa-solid fa-align-justify"></i>
+        </div>
+        <div class="social-header">
+          <i class="fa-solid fa-globe p-2"></i>
+          <i class="fa-solid fa-share-nodes p-2"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-list py-5 px-3">
+      <div class="list">
+        <ul class="nav flex-column">
+          <li id="nowPlaying" class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Now playing</a>
+          </li>
+          <li id="popular" class="nav-item">
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+          <li id="topRated" class="nav-item">
+            <a class="nav-link" href="#">Top Rated</a>
+          </li>
+          <li id="trending" class="nav-item">
+            <a class="nav-link">Trending</a>
+          </li>
+
+          <li id="upcoming" class="nav-item">
+            <a class="nav-link">Upcoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-social">
+        <a href="#"><i class="fab fa-facebook-f p-1"></i></a>
+        <a href="#"><i class="fab fa-twitter p-1"></i></a>
+        <a href="#"><i class="fas fa-globe p-1"></i></a>
+        <div class="pt-3">
+          <span>Copyright Â© 2019 All Rights Reserved.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="search">
+    <div class="container pt-5 w-75 mx-auto">
+      <div class="row py-5">
+        <div class="col-md-10 mx-auto mb-3">
+          <div class="form-group text-white">
+            <input type="text" id="allSearch" class="form form-control" placeholder="search..." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container w-75 mx-auto">
+      <div class="row" id="data"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="container w-75 mx-auto my-5">
+    <h2 class="text-light my-5">Contact Us...</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input class="form text-white form-control" id="name" placeholder="Enter Your Name" />
+          <div class="alert alert-danger" id="namealert" role="alert">
+            Your Name is not valid
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input class="form text-white form-control" id="email" placeholder="Enter Email" />
+          <div class="alert alert-danger" id="emailalert" role="alert">
+            entre valid email
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input class="form text-white form-control" id="phone" placeholder="Enter phone" />
+          <div class="alert alert-danger" id="phonealert" role="alert">
+            entre valid phone
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input class="form text-white form-control" id="age" placeholder="Enter Age" />
+          <div class="alert alert-danger" id="agealert" role="alert">
+            entre valid Age
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input class="form text-white form-control" type="password" id="password" placeholder="Enter Password" />
+          <div class="alert alert-danger" id="passwordalert" role="alert">
+            entre valid password *Minimum eight characters, at least one
+            letter and one number:*
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input class="form text-white form-control" type="password" id="rePassword" placeholder="Enter RePassword" />
+          <div class="alert alert-danger" id="repasswordalert" role="alert">
+            entre valid Repassword
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" disabled="" id="submitBtn" class="btn btn-outline-danger">
+      Submit
+    </button>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
