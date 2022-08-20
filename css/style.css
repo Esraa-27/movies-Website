@@ -1,0 +1,101 @@
+body{
+    background-color: #000000f2;
+    color: #212529;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+/**************************************************************************************************************/
+#sidebar .sidebar-header{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    width: 60px;
+    height: 100vh;
+    background-color:#fff;
+    z-index: 100;
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+.x-header{
+    cursor:pointer;
+}
+/*---------------------------------------------------------------------------*/
+#sidebar .sidebar-list{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: -240px;
+    width: 240px;
+    height: 100vh;
+    z-index:100;
+    background-color:#000;
+    color: #fff;
+}
+#sidebar .sidebar-list .list{
+    position: absolute;
+    top: 100%;
+}
+
+#sidebar .sidebar-list .nav-social{
+    position: absolute;
+    bottom:  50px;
+    
+
+}
+
+#sidebar .nav-social a,
+#sidebar .sidebar-list .nav-link{
+    color: #f9f6f6;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 0px;
+    cursor: pointer;
+
+}
+
+#sidebar .nav-social a:hover,
+#sidebar .sidebar-list .nav-link:hover{
+    color: #ff655c;
+    transition: all 0.3s;
+
+}
+
+/*****************************************************************************************************************/
+.form{
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    color: #fff !important;
+    background-color: transparent !important;
+    text-align: center;
+    border-radius: 0%;
+    padding: .75rem 1.25rem;
+}
+.alert{
+    display: none;
+   
+}
+/******************************************************************************************************************/
+
+/* data api */
+.movie{
+    overflow: hidden;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255,255,255,.7);
+    transition: all 1s;
+    color: #000;
+  
+}
+.movie:hover .layer{
+    top: 0px;
+}
